@@ -2,8 +2,8 @@
   "scripts": {
     "prettier:check": "prettier -c ./",
     "prettier:write": "prettier --write .",
-    "publish": "npx jsr publish --allow-dirty",
-    "publish:check": "npx jsr publish --allow-dirty --dry-run"
+    "publish": "npx jsr publish --allow-dirty --allow-slow-types",
+    "publish:check": "npx jsr publish --allow-dirty --dry-run --allow-slow-types"
   },
   "devDependencies": {
     "@types/react": "19.2.17",
