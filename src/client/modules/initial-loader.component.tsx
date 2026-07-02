@@ -11,10 +11,12 @@ export const InitialLoaderComponent =
   ({ children }) => {
     const { loadSpriteSheet } = useTextures();
 
-    const [isLoaded, setIsLoaded] = useState<boolean>(initialSpriteSheets.length === 0);
+    const [isLoaded, setIsLoaded] = useState<boolean>(
+      initialSpriteSheets.length === 0,
+    );
 
     useEffect(() => {
-      if(initialSpriteSheets.length === 0) return;
+      if (initialSpriteSheets.length === 0) return;
 
       Promise.all(initialSpriteSheets.map(loadSpriteSheet)).then(() => {
         setIsLoaded(true);
