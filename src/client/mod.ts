@@ -1,1 +1,2 @@
-export * from "./test.component";
+export * from "./modules";
+export * from "./shared";
