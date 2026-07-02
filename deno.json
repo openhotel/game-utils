@@ -1,0 +1,14 @@
+{
+  "name": "@oh/game-utils",
+  "version": "0.0.0",
+  "exports": {
+    ".": "./src/core/mod.ts",
+    "./core": "./src/core/mod.ts",
+    "./client": "./src/client/mod.ts"
+  },
+  "imports": {
+    "@std/datetime": "jsr:@std/datetime@^0.225.7"
+  },
+  "tasks": {},
+  "nodeModulesDir": "auto"
+}

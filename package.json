@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "prettier:check": "prettier -c ./",
+    "prettier:write": "prettier --write .",
+    "publish": "npx jsr publish --allow-dirty",
+    "publish:check": "npx jsr publish --allow-dirty --dry-run"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "jsr": "0.14.3",
+    "prettier": "3.9.4"
+  },
+  "dependencies": {
+    "react": "19.2.7"
+  },
+  "packageManager": "yarn@1.22.22"
+}
